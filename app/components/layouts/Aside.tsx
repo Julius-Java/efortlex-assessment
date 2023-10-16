@@ -15,7 +15,7 @@ const Aside = () => {
             onClick={toggleAside}
         >
             {/* Main Nav Contents */}
-            <div className='bg-white h-full w-[70%]  xs:w-[40%] sm:w-[20%]'>
+            <div className='bg-white h-full w-[70%]  xs:w-[40%] sm:w-[20%] overflow-auto'>
                 <section className='px-3 py-6 bg-gray-200'>
                     <UserCircleIcon className='w-14 text-gray-400' />
                     <div className='mt-2'>
