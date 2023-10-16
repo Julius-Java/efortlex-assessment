@@ -60,7 +60,7 @@ const Aside = () => {
                         </nav>
                     </section>
                     <hr />
-                    <section className='ps-3 py-4'>
+                    <section className='ps-3 py-4 mb-[4rem]'>
                         <nav>
                             <ul>
                                 {bottomNav.map((item, index) => (
