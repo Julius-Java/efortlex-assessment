@@ -17,7 +17,7 @@ const Aside = () => {
             {/* Main Nav Contents */}
             <div className='bg-white h-full w-[70%]  xs:w-[40%] sm:w-[20%] overflow-auto'>
                 <section className='px-3 py-6 bg-gray-200'>
-                    <UserCircleIcon className='w-14 text-gray-400' />
+                    <UserCircleIcon className='w-20 text-gray-400' />
                     <div className='mt-2'>
                         <Link href={"/"} className='underline'>Sign in</Link> | <Link href={"/"} className='underline'>Register</Link>
                     </div>
@@ -34,7 +34,7 @@ const Aside = () => {
                                             className='flex items-center gap-3'
                                         >
                                             {item.icon}
-                                            <span className='block text-lg'>{item.label}</span>
+                                            <span className='block text-base md:text-lg'>{item.label}</span>
                                         </Link>
                                     </li>
                                 ))}
@@ -52,7 +52,7 @@ const Aside = () => {
                                             className='flex items-center gap-3'
                                         >
                                             {item.icon}
-                                            <span className='block text-lg'>{item.label}</span>
+                                            <span className='block text-base md:text-lg'>{item.label}</span>
                                         </Link>
                                     </li>
                                 ))}
@@ -66,7 +66,7 @@ const Aside = () => {
                                 {bottomNav.map((item, index) => (
                                     <li key={index} className='py-2'>
                                         <Link href={item.path}>
-                                            <span>{item.label}</span>
+                                            <span className='block'>{item.label}</span>
                                         </Link>
                                     </li>
                                 ))}
