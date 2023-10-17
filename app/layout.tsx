@@ -3,6 +3,8 @@ import { Inter, Roboto } from 'next/font/google'
 import './globals.css'
 import Navigation from './components/layouts/Navigation'
 import Aside from './components/layouts/Aside'
+import Footer from './components/layouts/Footer'
+import NewsLetterBanner from './components/shared/NewsLetterBanner'
 import { ContextProvider } from './components/shared/ContextProvider'
 // import { useState } from 'react'
 
@@ -35,6 +37,8 @@ export default function RootLayout({
           <main>
             {children}
           </main>
+          <NewsLetterBanner />
+          <Footer />
         </body>
       </ContextProvider>
     </html>

@@ -11,11 +11,14 @@ const Aside = () => {
     return (
         // Overlay
         <aside
-            className={twMerge('fixed top-0  h-screen bg-black bg-opacity-30 transition-all duration-200 w-full', isAsideOpen ? "left-0": "-left-full")}
+            className={twMerge('fixed top-0  h-screen bg-black bg-opacity-30 transition-all duration-200 w-full z-10', isAsideOpen ? "left-0": "-left-full")}
             onClick={toggleAside}
         >
             {/* Main Nav Contents */}
-            <div className='bg-white h-full w-[70%]  xs:w-[40%] sm:w-[20%] overflow-auto'>
+            <div
+                className='bg-white h-full w-[70%]  xs:w-[40%] sm:w-[25%] xl:w-[15%] overflow-auto'
+                onClick={(e) => e.stopPropagation()}
+            >
                 <section className='px-3 py-6 bg-gray-200'>
                     <UserCircleIcon className='w-20 text-gray-400' />
                     <div className='mt-2'>
@@ -66,7 +69,7 @@ const Aside = () => {
                                 {bottomNav.map((item, index) => (
                                     <li key={index} className='py-2'>
                                         <Link href={item.path}>
-                                            <span className='block'>{item.label}</span>
+                                            <span className='block '>{item.label}</span>
                                         </Link>
                                     </li>
                                 ))}

@@ -11,6 +11,9 @@ const config: Config = {
       screens: {
         'xs': '374px',
       },
+      colors: {
+        priBlue: "#127FFF"
+      },
       backgroundImage: {
         'gradient-radial': 'radial-gradient(var(--tw-gradient-stops))',
         'gradient-conic':
