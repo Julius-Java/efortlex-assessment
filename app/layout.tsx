@@ -6,6 +6,8 @@ import Aside from './components/layouts/Aside'
 import Footer from './components/layouts/Footer'
 import NewsLetterBanner from './components/shared/NewsLetterBanner'
 import { ContextProvider } from './components/shared/ContextProvider'
+import SearchBar from './components/layouts/SearchBar'
+import CategoryBtnList from './components/layouts/CategoryBtnList'
 // import { useState } from 'react'
 
 const inter = Inter({ subsets: ['latin'] })
@@ -33,8 +35,10 @@ export default function RootLayout({
       <ContextProvider>
         <body className={roboto.className + " relative"}>
           <Navigation />
+          <SearchBar/>
+          <CategoryBtnList/>
           <Aside />
-          <main>
+          <main className='container mx-auto px-3 md:p-0'>
             {children}
           </main>
           <NewsLetterBanner />

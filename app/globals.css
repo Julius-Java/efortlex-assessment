@@ -1,3 +1,18 @@
 @tailwind base;
 @tailwind components;
 @tailwind utilities;
+
+.bg-bannerImg {
+    background-image: url("/assets/headerBanner.png");
+    background-size: cover;
+    background-position: top center;
+    background-repeat: no-repeat;
+}
+
+::-webkit-scrollbar {
+    width: 12px; /* Set scrollbar width as needed */
+}
+
+::-webkit-scrollbar-thumb {
+    background-color: transparent; /* Make the thumb transparent */
+}
